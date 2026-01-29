@@ -4,138 +4,159 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CV - Raji Maulana</title>
+
+  <!-- Desain CV modern dengan layout dua kolom seperti template Canva -->
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
 
     body {
-      background: linear-gradient(135deg, #0f172a, #1e293b, #020617);
-      color: #333;
-      line-height: 1.6;
+      background: #e5e7eb;
+      padding: 20px;
     }
 
-    header {
-      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    .cv-container {
+      max-width: 1000px;
+      margin: auto;
+      background: white;
+      display: grid;
+      grid-template-columns: 320px 1fr;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      background: linear-gradient(180deg, #0f172a, #020617);
       color: white;
-      padding: 40px 20px;
-      text-align: center;
-      position: relative;
+      padding: 30px 22px;
     }
 
     .profile-img {
-      width: 140px;
-      height: 140px;
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
       object-fit: cover;
       border: 4px solid white;
-      margin-bottom: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      display: block;
+      margin: 0 auto 15px;
     }
 
-    header h1 { margin-bottom: 8px; }
-    header p { opacity: 0.95; margin-bottom: 4px; }
-
-    .container {
-      max-width: 1000px;
-      margin: 25px auto;
-      padding: 0 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 22px;
-      border-radius: 12px;
+    .sidebar h1 {
+      text-align: center;
+      font-size: 22px;
       margin-bottom: 20px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
-    .card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    .sidebar h3 {
+      margin: 20px 0 8px;
+      font-size: 15px;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
+      padding-bottom: 5px;
     }
 
-    h2 {
-      margin-bottom: 12px;
-      color: #1e293b;
+    .sidebar ul {
+      list-style: none;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .sidebar li { margin-bottom: 6px; }
+
+    /* MAIN CONTENT */
+    .main {
+      padding: 30px;
+      background: #ffffff;
+    }
+
+    .section {
+      margin-bottom: 24px;
+    }
+
+    .section h2 {
+      color: #0f172a;
+      margin-bottom: 10px;
       border-bottom: 2px solid #e5e7eb;
       padding-bottom: 6px;
+      font-size: 20px;
     }
-
-    .two-column {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-    }
-
-    ul { margin-left: 20px; }
 
     .item { margin-bottom: 12px; }
-    .item strong { display: block; }
+
+    .item strong {
+      display: block;
+      color: #111827;
+    }
+
+    p, li { font-size: 14px; line-height: 1.6; }
+
+    ul { margin-left: 18px; }
 
     footer {
       text-align: center;
-      padding: 20px;
-      background: #020617;
-      color: white;
-      margin-top: 30px;
-      font-size: 14px;
+      margin-top: 20px;
+      color: #555;
+      font-size: 13px;
     }
 
     @media (max-width: 768px) {
-      .two-column { grid-template-columns: 1fr; }
+      .cv-container { grid-template-columns: 1fr; }
+      .sidebar { text-align: center; }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <!-- Gunakan file foto yang diberikan sebagai foto profil -->
+<div class="cv-container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
     <img src="IMG_20260128_234824.jpg" alt="Foto Raji Maulana" class="profile-img">
 
     <h1>Raji Maulana</h1>
-    <p>Halo! Saya Raji Maulana, saya lulusan SMA KP BALEENDAH.</p>
-    <p>083861382354 | Kp Mulyasari RT 9, Kec. Baleendah, Kab. Bandung</p>
-    <p>TikTok: @pelukishitamputih1</p>
-  </header>
 
-  <div class="container">
+    <h3>Kontak</h3>
+    <ul>
+      <li>📞 083861382354</li>
+      <li>📍 Kp Mulyasari RT 9, Baleendah, Bandung</li>
+      <li>🎵 TikTok: @pelukishitamputih1</li>
+      <li>🎂 Lahir: 06 April 2008</li>
+    </ul>
 
-    <!-- Tentang Diri -->
-    <section class="card">
+    <h3>Hobi</h3>
+    <ul>
+      <li>Bermain bulu tangkis</li>
+      <li>Game online (Mobile Legends)</li>
+      <li>Membaca novel</li>
+    </ul>
+
+    <h3>Keahlian</h3>
+    <ul>
+      <li>Mengajar bacaan Al-Qur'an</li>
+      <li>Mengajar dasar tajwid</li>
+    </ul>
+
+    <h3>Bahasa</h3>
+    <ul>
+      <li>Indonesia</li>
+      <li>Inggris</li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="main">
+
+    <section class="section">
       <h2>Tentang Diri</h2>
       <p>
         Halo! Saya Raji Maulana, lulusan SMA KP Baleendah tahun 2026. Saya memiliki minat
-        dalam kegiatan keagamaan serta memiliki kemampuan mengajar anak-anak sekolah dasar
-        dalam membaca Al-Qur'an dan memahami tajwid.
+        dalam kegiatan keagamaan serta kemampuan mengajar anak-anak sekolah dasar dalam
+        membaca Al-Qur'an dan memahami tajwid. Saya senang belajar hal baru dan siap
+        mengembangkan kemampuan di dunia kerja.
       </p>
     </section>
 
-    <!-- Data Pribadi -->
-    <section class="card two-column">
-      <div>
-        <h2>Data Pribadi</h2>
-        <ul>
-          <li><strong>Nama:</strong> Raji Maulana</li>
-          <li><strong>Tahun Lahir:</strong> 06 April 2008</li>
-          <li><strong>Nomor Telepon:</strong> 083861382354</li>
-          <li><strong>Alamat:</strong> Kp Mulyasari RT 9, Kec. Baleendah, Kab. Bandung</li>
-        </ul>
-      </div>
-
-      <div>
-        <h2>Hobi & Media Sosial</h2>
-        <ul>
-          <li><strong>Hobi:</strong></li>
-          <li>Bermain bulu tangkis</li>
-          <li>Bermain game online (Mobile Legends)</li>
-          <li>Membaca novel</li>
-          <li><strong>TikTok:</strong> @pelukishitamputih1</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Pendidikan -->
-    <section class="card">
+    <section class="section">
       <h2>Pendidikan</h2>
       <div class="item">
         <strong>SMA KP Baleendah</strong>
@@ -143,48 +164,29 @@
       </div>
     </section>
 
-    <!-- Keahlian & Bahasa -->
-    <section class="card two-column">
-      <div>
-        <h2>Keahlian</h2>
-        <ul>
-          <li>Mengajar anak-anak SD membaca Al-Qur'an</li>
-          <li>Mengajarkan dasar tajwid</li>
-        </ul>
-      </div>
-
-      <div>
-        <h2>Bahasa</h2>
-        <ul>
-          <li>Bahasa Indonesia</li>
-          <li>Bahasa Inggris</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Organisasi -->
-    <section class="card">
+    <section class="section">
       <h2>Pengalaman Organisasi</h2>
       <div class="item">
         <strong>-</strong>
-        Belum memiliki pengalaman organisasi
+        Belum memiliki pengalaman organisasi.
       </div>
       <p><strong>Tahun Lulus:</strong> 2026</p>
     </section>
 
-    <!-- Sertifikat -->
-    <section class="card">
+    <section class="section">
       <h2>Sertifikat</h2>
       <ul>
         <li>Sertifikat TKA mata pelajaran Geografi dengan nilai 81,43</li>
       </ul>
     </section>
 
-  </div>
+  </main>
 
-  <footer>
-    © 2026 — CV Online Raji Maulana
-  </footer>
+</div>
+
+<footer>
+  © 2026 — CV Online Raji Maulana
+</footer>
 
 </body>
 </html>
