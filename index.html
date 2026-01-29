@@ -6,35 +6,57 @@
   <title>CV - Raji Maulana</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
-    body { background: #f4f6f8; color: #333; line-height: 1.6; }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b, #020617);
+      color: #333;
+      line-height: 1.6;
+    }
 
     header {
-      background: #0f172a;
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
       color: white;
       padding: 40px 20px;
       text-align: center;
+      position: relative;
     }
 
-    header h1 { margin-bottom: 10px; }
-    header p { opacity: 0.9; }
+    .profile-img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    header h1 { margin-bottom: 8px; }
+    header p { opacity: 0.95; margin-bottom: 4px; }
 
     .container {
       max-width: 1000px;
-      margin: 20px auto;
+      margin: 25px auto;
       padding: 0 20px;
     }
 
     .card {
       background: white;
-      padding: 20px;
-      border-radius: 8px;
+      padding: 22px;
+      border-radius: 12px;
       margin-bottom: 20px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     }
 
     h2 {
       margin-bottom: 12px;
-      color: #0f172a;
+      color: #1e293b;
       border-bottom: 2px solid #e5e7eb;
       padding-bottom: 6px;
     }
@@ -53,7 +75,7 @@
     footer {
       text-align: center;
       padding: 20px;
-      background: #0f172a;
+      background: #020617;
       color: white;
       margin-top: 30px;
       font-size: 14px;
@@ -67,9 +89,13 @@
 <body>
 
   <header>
+    <!-- Gunakan file foto yang diberikan sebagai foto profil -->
+    <img src="IMG_20260128_234824.jpg" alt="Foto Raji Maulana" class="profile-img">
+
     <h1>Raji Maulana</h1>
     <p>Halo! Saya Raji Maulana, saya lulusan SMA KP BALEENDAH.</p>
-    <p>083861382354 | Kp Mulyasari RT 9, Kec. Baleendah, Kab. Bandung | TikTok @pelukishitamputih1</p>
+    <p>083861382354 | Kp Mulyasari RT 9, Kec. Baleendah, Kab. Bandung</p>
+    <p>TikTok: @pelukishitamputih1</p>
   </header>
 
   <div class="container">
@@ -122,8 +148,8 @@
       <div>
         <h2>Keahlian</h2>
         <ul>
-          <li>Memiliki kemampuan mengajar anak-anak SD membaca Al-Qur'an</li>
-          <li>Memahami dan mengajarkan dasar tajwid</li>
+          <li>Mengajar anak-anak SD membaca Al-Qur'an</li>
+          <li>Mengajarkan dasar tajwid</li>
         </ul>
       </div>
 
