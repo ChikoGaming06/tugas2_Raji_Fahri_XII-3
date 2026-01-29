@@ -1,11 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV - Nama Anda</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; }
+    body { background: #f4f6f8; color: #333; line-height: 1.6; }
+
+    header {
+      background: #0f172a;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 { margin-bottom: 10px; }
+    header p { opacity: 0.9; }
+
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      margin-bottom: 12px;
+      color: #0f172a;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 6px;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    ul { margin-left: 20px; }
+
+    .item { margin-bottom: 12px; }
+    .item strong { display: block; }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0f172a;
+      color: white;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .two-column { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
-    Hello World
+
+  <header>
+    <h1>Nama Lengkap</h1>
+    <p>Tentang Diri Singkat</p>
+    <p>Nomor Telepon | Alamat | Media Sosial</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Tentang Diri -->
+    <section class="card">
+      <h2>Tentang Diri</h2>
+      <p>
+        Tuliskan deskripsi singkat tentang diri Anda, minat, tujuan karier,
+        dan kemampuan utama.
+      </p>
+    </section>
+
+    <!-- Data Pribadi -->
+    <section class="card two-column">
+      <div>
+        <h2>Data Pribadi</h2>
+        <ul>
+          <li><strong>Nama:</strong> Nama Lengkap</li>
+          <li><strong>Tahun Lahir:</strong> 20XX</li>
+          <li><strong>Nomor Telepon:</strong> 08xxxxxxxxxx</li>
+          <li><strong>Alamat:</strong> Alamat lengkap</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Hobi & Media Sosial</h2>
+        <ul>
+          <li><strong>Hobi:</strong> Hobi Anda</li>
+          <li><strong>Instagram:</strong> @username</li>
+          <li><strong>LinkedIn:</strong> linkedin.com/in/username</li>
+          <li><strong>Platform lain:</strong> Tambahkan jika ada</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Pendidikan -->
+    <section class="card">
+      <h2>Pendidikan</h2>
+      <div class="item">
+        <strong>Nama Sekolah / Universitas</strong>
+        Jurusan — Tahun Masuk - Tahun Lulus
+      </div>
+    </section>
+
+    <!-- Keahlian & Bahasa -->
+    <section class="card two-column">
+      <div>
+        <h2>Keahlian</h2>
+        <ul>
+          <li>Keahlian 1</li>
+          <li>Keahlian 2</li>
+          <li>Keahlian 3</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2>Bahasa</h2>
+        <ul>
+          <li>Bahasa Indonesia</li>
+          <li>Bahasa Inggris</li>
+          <li>Bahasa lainnya</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Organisasi -->
+    <section class="card">
+      <h2>Pengalaman Organisasi</h2>
+      <div class="item">
+        <strong>Nama Organisasi</strong>
+        Jabatan — Tahun Aktif
+        <p>Keterangan kegiatan atau tanggung jawab utama.</p>
+      </div>
+      <p><strong>Tahun Lulus:</strong> 20XX</p>
+    </section>
+
+    <!-- Sertifikat -->
+    <section class="card">
+      <h2>Sertifikat</h2>
+      <ul>
+        <li>Sertifikat / Pelatihan 1</li>
+        <li>Sertifikat / Pelatihan 2</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2026 — CV Online
+  </footer>
+
 </body>
 </html>
